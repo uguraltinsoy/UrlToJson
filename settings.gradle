@@ -1,0 +1,3 @@
+rootProject.name = "UrlToJson"
+include ':app'
+include ':UrlJson'
