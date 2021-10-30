@@ -17,7 +17,7 @@ allprojects {
 ```
 ```
 dependencies {
-	implementation 'com.github.uguraltinsoy:UrlToJson:1.0.0'
+	implementation 'com.github.uguraltinsoy:UrlToJson:1.0.1'
 }
 ```
 or Maven:
@@ -33,7 +33,7 @@ or Maven:
 <dependency>
 	<groupId>com.github.uguraltinsoy</groupId>
 	<artifactId>UrlToJson</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 </dependency>
 ```
 
