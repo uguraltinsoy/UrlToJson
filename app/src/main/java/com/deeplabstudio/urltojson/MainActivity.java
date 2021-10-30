@@ -1,10 +1,10 @@
 package com.deeplabstudio.urltojson;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import com.deeplabstudio.urljson.UrlJson;
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 

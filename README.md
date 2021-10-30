@@ -44,6 +44,15 @@ or Maven:
 String result = UrlJson.getJson("Source Url");
 ```
 
+### Get String Json with Request Property or Header
+```Java
+String unixTimeStamp = String.valueOf(System.currentTimeMillis());
+HashMap<String, String> property = new HashMap<>();
+property.put("X-PCK", API_KEY);
+property.put("User-Agent", "Mozilla/5.0");
+String result = UrlJson.getJson(BASE_URL + BALANCE, property);
+```
+
 ### String to JSONObject
 ```Java
 JSONObject jsonObject = new JSONObject(result);
