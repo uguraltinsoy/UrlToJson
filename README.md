@@ -46,10 +46,10 @@ String result = UrlJson.getJson("Source Url");
 
 ### Get String Json with Request Property or Header
 ```Java
-String unixTimeStamp = String.valueOf(System.currentTimeMillis());
 HashMap<String, String> property = new HashMap<>();
 property.put("X-PCK", API_KEY);
 property.put("User-Agent", "Mozilla/5.0");
+property.put("Content-type", "application/json");
 String result = UrlJson.getJson(BASE_URL + BALANCE, property);
 ```
 
