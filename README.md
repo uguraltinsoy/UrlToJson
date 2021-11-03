@@ -1,3 +1,4 @@
+
 # Android UrlToJson
 
 ### AndroidManifest
@@ -37,29 +38,53 @@ or Maven:
 </dependency>
 ```
 
-## Usage
+## Usage Java - Kotlin
 
 ### Get String Json
 ```Java
+// JAVA
 String result = UrlJson.getJson("Source Url");
+```
+```Kotlin
+// KOTLIN
+val result = UrlJson.getJson("Source Url")
 ```
 
 ### Get String Json with Request Property or Header
 ```Java
+// JAVA
 HashMap<String, String> property = new HashMap<>();
 property.put("X-PCK", API_KEY);
 property.put("User-Agent", "Mozilla/5.0");
 property.put("Content-type", "application/json");
 String result = UrlJson.getJson(BASE_URL + BALANCE, property);
 ```
+```Kotlin
+// KOTLIN
+val property = HashMap<String, String>()  
+property["X-PCK"] = "API_KEY"  
+property["User-Agent"] = "Mozilla/5.0"  
+property["Content-type"] = "application/json"  
+val result = UrlJson.getJson("Source Url", property)
+```
 
 ### String to JSONObject
 ```Java
+// JAVA
 JSONObject jsonObject = new JSONObject(result);
+```
+```Kotlin
+// KOTLIN
+val jsonObject = JSONObject(result)
 ```
 ### String to JSONObject
 ```Java
+// JAVA
 JSONArray jsonArray = new JSONArray(result);
+```
+```Kotlin
+// KOTLIN
+val jsonArray = JSONArray(result)
 ```
 ### Developer By
 ```
