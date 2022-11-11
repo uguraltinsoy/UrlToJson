@@ -9,30 +9,30 @@
 ### Build Gradle
 ```  
 allprojects {  
-	 repositories { 
-		... maven { url 'https://jitpack.io' } 
-	 }
+    repositories { 
+        ... maven { url 'https://jitpack.io' } 
+    }
 }  
 ```  
 ```  
 dependencies {  
-	implementation 'com.github.uguraltinsoy:UrlToJson:1.0.2'
+    implementation 'com.github.uguraltinsoy:UrlToJson:1.0.2'
 }  
 ```  
 or Maven:
 ```  
 <repositories>  
-	<repository>
-		<id>jitpack.io</id>
-		<url>https://jitpack.io</url>
-	</repository>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
 </repositories>  
 ```  
 ```  
 <dependency>  
-	<groupId>com.github.uguraltinsoy</groupId>
-	<artifactId>UrlToJson</artifactId> 
-	<version>1.0.2</version>
+    <groupId>com.github.uguraltinsoy</groupId>
+    <artifactId>UrlToJson</artifactId> 
+    <version>1.0.2</version>
 </dependency>  
 ```  
 
@@ -43,52 +43,52 @@ or Maven:
 ```Java
 // JSON OBJECT 
 UrlJson.load("Source Url").getObject(new UrlJson.JsonObject() {  
-	@Override  
-	public void Result(JSONObject jsonObject) throws JSONException {  
+    @Override  
+    public void Result(JSONObject jsonObject) throws JSONException {  
 
-	}  
+    }  
 	
-    	@Override  
-    	public void Error(String error) {  
+    @Override  
+    public void Error(String error) {  
 	
-	}
+    }
 });
 // JSON ARRAY
 UrlJson.load("Source Url").getArray(new UrlJson.JsonArray() {  
-	@Override  
-    	public void Result(JSONArray jsonArray) throws JSONException {  
+    @Override  
+    public void Result(JSONArray jsonArray) throws JSONException {  
      
-    	}  
+    }  
   
-    	@Override  
-    	public void Error(String error) {  
+    @Override  
+    public void Error(String error) {  
   
-    	}
+    }
 });
 ```  
 #### Kotlin
 ```Kotlin   
 // JSON OBJECT 
 UrlJson.load("Source Url").getObject(object : JsonObject {  
-	@Throws(JSONException::class)  
-    	override fun Result(jsonObject: JSONObject) {  
+    @Throws(JSONException::class)  
+    override fun Result(jsonObject: JSONObject) {  
     
-    	}  
+    }  
     
-    	override fun Error(error: String) {
+    override fun Error(error: String) {
     
-	}  
+    }  
 })
 // JSON ARRAY
 UrlJson.load("Source Url").getArray(object : JsonArray {  
-	@Throws(JSONException::class)  
-	override fun Result(jsonArray: JSONArray) {  
+    @Throws(JSONException::class)  
+    override fun Result(jsonArray: JSONArray) {  
 
-	}  
+    }  
 	
-    	override fun Error(error: String) {
+    override fun Error(error: String) {
 
-	}  
+    }  
 })
 ```  
 
@@ -103,27 +103,27 @@ property.put("Content-type", "application/json");
 ```Java 
 // JSON OBJECT
 UrlJson.load("Source Url").addProperty(property).getObject(new UrlJson.JsonObject() {  
-	@Override  
-	public void Result(JSONObject jsonObject) throws JSONException {  
+    @Override  
+    public void Result(JSONObject jsonObject) throws JSONException {  
     
-    	}  
+    }  
 	
-	@Override  
-	public void Error(String error) {  
+    @Override  
+    public void Error(String error) {  
   
-    	}
+    }
 });
 // JSON ARRAY
 UrlJson.load("Source Url").addProperty(property).getArray(new UrlJson.JsonArray() {  
-	@Override  
-    	public void Result(JSONArray jsonArray) throws JSONException {  
+    @Override  
+    public void Result(JSONArray jsonArray) throws JSONException {  
   
-    	}  
+    }  
 	
-    	@Override  
-    	public void Error(String error) {  
+    @Override  
+    public void Error(String error) {  
   
-    	}
+    }
 });  
 ```  
 #### Kotlin
@@ -136,25 +136,25 @@ property["Content-type"] = "application/json"
 ```Kotlin
 // JSON OBJECT 
 UrlJson.load("Source Url").addProperty(property).getObject(object : JsonObject {  
-	@Throws(JSONException::class)  
-    	override fun Result(jsonObject: JSONObject) {  
+    @Throws(JSONException::class)  
+    override fun Result(jsonObject: JSONObject) {  
     
-    	}  
+    }  
     
-    	override fun Error(error: String) {
+    override fun Error(error: String) {
     
-	}  
+    }  
 })
 // JSON ARRAY
 UrlJson.load("Source Url").addProperty(property).getArray(object : JsonArray {  
-	@Throws(JSONException::class)  
-	override fun Result(jsonArray: JSONArray) {  
+    @Throws(JSONException::class)  
+    override fun Result(jsonArray: JSONArray) {  
 
-	}  
+    }  
 	
-    	override fun Error(error: String) {
+    override fun Error(error: String) {
 
-	}  
+    }  
 }) 
 ```
 
