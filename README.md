@@ -47,21 +47,22 @@ UrlJson.load("Source Url").getObject(new UrlJson.JsonObject() {
 	public void Result(JSONObject jsonObject) throws JSONException {  
 
 	}  
-    @Override  
-    public void Error(String error) {  
+    	@Override  
+    	public void Error(String error) {  
+	
 	}
 });
 // JSON ARRAY
 UrlJson.load("Source Url").getArray(new UrlJson.JsonArray() {  
 	@Override  
-    public void Result(JSONArray jsonArray) throws JSONException {  
+    	public void Result(JSONArray jsonArray) throws JSONException {  
      
-    }  
+    	}  
   
-    @Override  
-    public void Error(String error) {  
+    	@Override  
+    	public void Error(String error) {  
   
-    }
+    	}
 });
 ```  
 #### Kotlin
@@ -69,11 +70,11 @@ UrlJson.load("Source Url").getArray(new UrlJson.JsonArray() {
 // JSON OBJECT 
 UrlJson.load("Source Url").getObject(object : JsonObject {  
 	@Throws(JSONException::class)  
-    override fun Result(jsonObject: JSONObject) {  
+    	override fun Result(jsonObject: JSONObject) {  
     
-    }  
+    	}  
     
-    override fun Error(error: String) {
+    	override fun Error(error: String) {
     
 	}  
 })
@@ -83,7 +84,8 @@ UrlJson.load("Source Url").getArray(object : JsonArray {
 	override fun Result(jsonArray: JSONArray) {  
 
 	}  
-    override fun Error(error: String) {
+	
+    	override fun Error(error: String) {
 
 	}  
 })
@@ -103,22 +105,24 @@ UrlJson.load("Source Url").addProperty(property).getObject(new UrlJson.JsonObjec
 	@Override  
 	public void Result(JSONObject jsonObject) throws JSONException {  
     
-    }  
-    @Override  
-    public void Error(String error) {  
+    	}  
+	
+	@Override  
+	public void Error(String error) {  
   
-    }
+    	}
 });
 // JSON ARRAY
 UrlJson.load("Source Url").addProperty(property).getArray(new UrlJson.JsonArray() {  
 	@Override  
-    public void Result(JSONArray jsonArray) throws JSONException {  
+    	public void Result(JSONArray jsonArray) throws JSONException {  
   
-    }  
-    @Override  
-    public void Error(String error) {  
+    	}  
+	
+    	@Override  
+    	public void Error(String error) {  
   
-    }
+    	}
 });  
 ```  
 #### Kotlin
@@ -132,11 +136,11 @@ property["Content-type"] = "application/json"
 // JSON OBJECT 
 UrlJson.load("Source Url").addProperty(property).getObject(object : JsonObject {  
 	@Throws(JSONException::class)  
-    override fun Result(jsonObject: JSONObject) {  
+    	override fun Result(jsonObject: JSONObject) {  
     
-    }  
+    	}  
     
-    override fun Error(error: String) {
+    	override fun Error(error: String) {
     
 	}  
 })
@@ -146,7 +150,8 @@ UrlJson.load("Source Url").addProperty(property).getArray(object : JsonArray {
 	override fun Result(jsonArray: JSONArray) {  
 
 	}  
-    override fun Error(error: String) {
+	
+    	override fun Error(error: String) {
 
 	}  
 }) 
