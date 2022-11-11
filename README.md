@@ -10,13 +10,13 @@
 ```  
 allprojects {  
 	 repositories { 
-		 ... maven { url 'https://jitpack.io' } 
+		... maven { url 'https://jitpack.io' } 
 	 }
 }  
 ```  
 ```  
 dependencies {  
- implementation 'com.github.uguraltinsoy:UrlToJson:1.0.2'
+	implementation 'com.github.uguraltinsoy:UrlToJson:1.0.2'
 }  
 ```  
 or Maven:
@@ -47,6 +47,7 @@ UrlJson.load("Source Url").getObject(new UrlJson.JsonObject() {
 	public void Result(JSONObject jsonObject) throws JSONException {  
 
 	}  
+	
     	@Override  
     	public void Error(String error) {  
 	
