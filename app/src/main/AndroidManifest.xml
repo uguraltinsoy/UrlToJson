@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.deeplabstudio.urltojson">
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +13,9 @@
         <activity
             android:name=".KotlinMainActivity"
             android:exported="false" />
-        <activity android:name=".JavaMainActivity">
+
+        <activity android:name=".JavaMainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
